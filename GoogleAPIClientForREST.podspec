@@ -1,5 +1,6 @@
 Pod::Spec.new do |s|
-  s.name         = 'GoogleAPIClientForREST'
+  s.name         = 'GoogleAPIClientForREST-flow'
+  s.module_name  = 'GoogleAPIClientForREST'
   s.version      = '1.3.0'
   s.author       = 'Google Inc.'
   s.homepage     = 'https://github.com/google/google-api-objectivec-client-for-rest'
@@ -15,12 +16,12 @@ Pod::Spec.new do |s|
       This version can be used with iOS ≥ 7.0, OS X ≥ 10.9, tvOS ≥ 9.0.
                    DESC
   s.ios.deployment_target = '7.0'
-  s.osx.deployment_target = '10.9'
-  s.tvos.deployment_target = '9.0'
+  # s.osx.deployment_target = '10.9'
+  # s.tvos.deployment_target = '9.0'
 
   # Require at least 1.1.7 of the SessionFetcher for some changes in that
   # project's headers.
-  s.dependency 'GTMSessionFetcher', '>= 1.1.7'
+  s.dependency 'GTMSessionFetcher-flow', '>= 1.1.12'
 
   s.subspec 'Core' do |sp|
     sp.source_files = 'Source/GTLRDefines.h',
